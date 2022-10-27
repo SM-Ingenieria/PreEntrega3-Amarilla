@@ -1,0 +1,898 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,800;1,900&family=Play:wght@400;700&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* si aplico esto se rompe  */
+
+.grid-contenedor {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 400px;
+
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+/*------------------------HEADER------------------------- */
+header {
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    z-index: 1;
+    grid-area: header;
+}
+
+header h1 {
+    margin-left: 20px;
+    color: white;
+    position: sticky;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* ------------------------NAV ------------------------*/
+
+header nav ul {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.075);
+    /* margin-right: 10px; */
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+
+}
+
+header nav ul li a:hover {
+    opacity: 0.8;
+}
+
+.btn {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.btn:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+
+
+
+
+/* ------------------------MAIN------------------------  */
+.main {
+    grid-area: main;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)), url("../img/My\ Post.png");
+    background-position: center;
+    /* background-image: url(../img/My\ Post.png); */
+    width: 100%;
+    height: calc(100vh - 165px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-attachment: fixed; */
+
+    /* background-attachment: fixed; */
+}
+
+.hero div {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 190px;
+}
+
+.hero div h2 {
+    font-size: 40px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.hero div p {
+    /* text-align: center; */
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+    color: salmon;
+}
+
+.whatsapp_icon {
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    z-index: 999;
+    /* right: 3%;
+    bottom: 15%; */
+    padding: 15px;
+    animation: efecto 1.2s infinite;
+
+}
+
+.whatsapp_icon:hover {
+    transform: scale(1, 1);
+    transition: 0.3s;
+
+}
+
+.boton {
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgb(0, 0, 0, 0.85);
+    }
+
+    100% {
+        box-shadow: 0 0 0 25px rgb(0, 0, 0, 0);
+    }
+}
+
+.servicios .servicios-contenedor {
+    display: flex;
+    /* justify-content:space-around;
+ align-items: center; */
+
+
+    /* justify-content:center; */
+}
+
+.servicios .servicios-contenedor div {
+    text-align: center;
+    /* border: 1px solid gray; */
+}
+
+.servicios .servicios-contenedor div h3 {
+    color: white;
+    background-color: black;
+}
+
+
+/* tamaño de los div que contienen las imagenes */
+
+.servicios div {
+    width: 100%;
+    height: 350px;
+}
+
+.servicios h2 {
+    font-family: 'Play', sans-serif;
+}
+
+/* tamaño de las imagenes dentro de los div */
+
+.servicios div img {
+    width: 100%;
+    height: 300px;
+}
+
+.servicios {
+    margin-bottom: 50px;
+}
+
+.mas_servicios1 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+
+}
+
+.mas_servicios1 .serv1 {
+    text-align: center;
+    margin-right: 30px;
+
+
+}
+
+.mas_servicios1 .serv1 h3 {
+    font-size: 25px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.mas_servicios1 .serv1 p {
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+}
+
+.mas_servicios2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+.mas_servicios2 .serv2 {
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+.mas_servicios2 .serv2 h3 {
+    font-size: 25px;
+    font-family: 'Play', sans-serif;
+}
+
+.mas_servicios2 .serv2 p {
+    font-size: 10px;
+    text-align: justify;
+    font-family: 'Play', sans-serif;
+}
+
+/* GALERIA CON GRIDS */
+.grid-galeria {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    /*short para hacer 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr)) ; */
+    /* cada bloque de las filas que puedan generarse tendran el mismo valor tamaño */
+    grid-auto-rows: 420px;
+    gap: 15px;
+}
+
+.grid-galeria div img {
+    /* el 100% del contenedor es decir el grid item */
+    width: 100%;
+    height: 100%;
+    /* ayuda a dimennsionar la imagen adentro del contenedor div en este caso */
+    object-fit: contain;
+}
+.grid-item {
+    position: relative;
+}
+
+/* hacer absoluto el titulo asi se monta dentro de la imagen */
+.grid-item h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+    font-size: 30px;
+}
+
+
+/* ------------------------FOOTER ------------------------ */
+.footer {
+
+    grid-area: footer;
+}
+
+
+.footer {
+    background-color: black;
+    width: 100%;
+    /* height: 350px; */
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.footer .telefonos_direccion {
+    font-family: 'Play', sans-serif;
+    color: white;
+
+}
+
+.footer .telefonos_direccion p {
+    margin-top: 10px;
+}
+
+.footer h2 {
+    font-family: 'Play', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* -------------REDES-------------  */
+.footer .contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.instagram {
+    padding-top: 10px;
+}
+
+.whats {
+    padding-top: 10px;
+}
+
+.instagram {
+    padding-top: 10px;
+}
+
+.footer .telefonos_direccion {
+    padding-left: 20px;
+}
+
+.footer .contacto p {
+
+    color: #fff;
+    font-family: 'Play', sans-serif;
+
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+
+
+.whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .logo img {
+    width: 100px;
+}
+
+
+/* --------------------PAGINA SERVICIOS------------------- */
+
+.pag_servicios {
+    /* width: 100%; */
+    /* padding-top: 10px; */
+    /* background-color: beige; */
+    /* border: 5px solid green; */
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex: 200px;
+    flex-direction: column;
+}
+
+.pag_servicios img {
+    width: 300px;
+    height: 200px;
+    margin: 2px;
+}
+
+.servicios_en_pagina {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.descripcion_y_titulo_servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    font-family: 'Play', sans-serif;
+
+
+}
+
+.partners .partner_containers {
+    display: flex;
+    /* background-color:#8f969c;  */
+    /* border: 5px solid green; */
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.partner_box {
+    text-align: center;
+}
+
+.partners img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.partner_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Play', sans-serif;
+    width: 33%;
+    
+
+}
+
+.copyright {
+    background-color: black;
+    text-align: center;
+}
+
+.copyright p {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    color: wheat;
+}
+
+/* --------------PAGINA DE CONTACTO------------ */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)), url("../img/My\ Post.png");
+    background-position: center;
+    /* background-image: url(../img/My\ Post.png); */
+    width: 100%;
+    height: calc(100vh - 165px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-attachment: fixed; */
+
+    /* background-attachment: fixed; */
+}
+
+.titulo_contacto h1 {
+    color: red;
+    margin-top: 50px;
+    font-family: 'Play', sans-serif;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.titulo_contacto p {
+    font-family: 'Play', sans-serif;
+    font-size: 1.5vh;
+    text-align: center;
+
+}
+
+
+.contacto_contenido {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 500px;
+}
+
+.contacto_contenido h2 {
+    font-family: 'Play', sans-serif;
+    color: red;
+    font-size: 50px;
+}
+
+.contacto_contenido p {
+    font-family: 'Play', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    background-color: black;
+}
+
+
+
+.main_trabaja {
+    background-color: black;
+}
+
+/* -------------PAGINA TRABAJA CON NOSOTROS ----- */
+
+.soluciones {
+    display: flex;
+    /* background-color:#8f969c; 
+    border: 5px solid green; */
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    /* align-items: left; */
+}
+
+.descripcion_y_titulo_conocenos {
+    display: flex;
+    /* border: 5px solid green;
+    background-color:#8f329c;  */
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+
+
+.soluciones {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.descripcion_y_titulo_conocenos .titulo_soluciones h3 {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    color: rgb(225, 20, 20);
+    font-size: 50px;
+
+}
+
+.descripcion_soluciones p {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    color: rgb(225, 20, 20);
+    font-size: 0px;
+}
+
+.descripcion_soluciones ul {
+    list-style: none;
+}
+
+.descripcion_soluciones ul li {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.slider-frame {
+    width: 600px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 16s infinite alternate ease-in-out;
+
+
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+
+    20% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+}
+
+
+
+/* ----------------ACERCA DE---------------- */
+
+.descripcion_y_titulo_conocenos {
+    display: flex;
+    align-items: center;
+
+}
+
+.titulo_acerca h3 {
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+
+}
+
+.descripcion_acerca p {
+    color: white;
+    font-size: 30px;
+    font-family: 'Play', sans-serif;
+    /* text-align: center; */
+    text-align: justify;
+}
+
+.acerca_de {
+    background-color: black;
+}
+
+.descripcion_acerca ul li {
+    font-family: 'Play', sans-serif;
+
+    color: white;
+    font-size: 30px;
+}
+
+.iconos_servicios {
+    padding-left: 10%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.servicio_contacto {
+    color: #fff;
+    width: 60%;
+    
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio_contacto h4 {
+    font-family: 'Russo One', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/*!MEDIA QUERIE SIEMPRE AL FINAL */
+@media screen and (max-width:1200px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .servicios-contenedor h3 {
+        font-size: 20px;
+    }
+
+    .servicios-contenedor a {
+        font-size: 10px;
+    }
+
+    .grid-contenedor {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto 400px;
+
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .hero div h2 {
+        font-size: 25px;
+    }
+
+    .hero div p {
+        font-size: 20px;
+    }
+
+
+
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 220px;
+    }
+
+    .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .servicios-contenedor h3 {
+        font-size: 15px;
+    }
+
+
+    /* .img-9 {
+        grid-column: span 2;
+    } */
+
+    .footer .ubicacion iframe {
+        height: 300px;
+        width: 300px;
+    }
+
+    .slider-frame {
+        width: 500px;
+    }
+
+    .bienivenidos_citas {
+        height: 695px;
+        padding-bottom: 100px;
+    }
+
+    .contacto_descripcion p {
+        font-size: 30px;
+
+    }
+
+    .descripcion_soluciones p {
+        font-size: 25px;
+    }
+
+    .descripcion_soluciones ul li {
+        font-size: 20px;
+    }
+
+}
+
+/* adaptamos el header para que no rompa en la pagina al achicar la pantalla */
+@media screen and (max-width:650px) {
+
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mas_servicios1 {
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    .mas_servicios2 {
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    .servicios-contenedor a {
+        display: none;
+    }
+
+    .iconos_servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slider-frame {
+        width: 350px;
+    }
+
+    /* seccion servicios */
+    .pag_servicios .servicios_en_pagina {
+        flex-direction: column;
+    }
+
+    .partners .partner_containers {
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .whatsapp_icon {
+        display: none;
+    }
+
+    .iconos_servicios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .grid-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .slider-frame {
+        width: 300px;
+    }
+
+    .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
