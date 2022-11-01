@@ -1,0 +1,278 @@
+/*!MEDIA QUERIE SIEMPRE AL FINAL */
+
+@media screen and (max-width:1200px) {
+
+
+    .slider-frame {
+        width: 20%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+
+    .servicios-contenedor h3 {
+        font-size: 20px;
+    }
+
+    .servicios-contenedor a {
+        font-size: 10px;
+    }
+
+    .grid-contenedor {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto 400px;
+
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .header h1 {
+        font-size: 5vw;
+    }
+
+    .hero div h2 {
+        font-size: 25px;
+    }
+
+    .hero div p {
+        font-size: 20px;
+    }
+
+
+    .hero-contacto {
+        height: 300px;
+    }
+
+    .hero-contacto .container {
+        font-size: 20px;
+        padding-top: 0px;
+    }
+
+    .hero-contacto .container h1 {
+        font: 35px;
+        padding-top: 100px;
+    }
+
+    .hero-contacto .container h1 span {
+        border: 10px solid white;
+        padding: 6px 14px;
+        display: inline-block;
+    }
+
+    .servicios div {
+        margin-left: 7%;
+        align-items: center;
+        width: 80%;
+        height: auto;
+    }
+
+    .servicios-contenedor {
+        flex-direction: column;
+    }
+
+    .main .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 220px;
+    }
+    
+    .main .grid-galeria .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .servicios-contenedor h3 {
+        font-size: 15px;
+    }
+
+    .footer .ubicacion iframe {
+        height: 300px;
+        width: 300px;
+    }
+
+    .soluciones .soluciones_box .slider-frame {
+        width: 300px;
+    }
+
+    .bienivenidos_citas {
+        height: 695px;
+        padding-bottom: 100px;
+    }
+
+    .contacto_descripcion p {
+        font-size: 30px;
+
+    }
+
+    .main .soluciones .soluciones_box .descripcion_y_titulo_conocenos .titulo_soluciones h3{
+        font-size: 50%;
+    }
+
+    .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .descripcion_soluciones p {
+        font-size: 25px;
+    }
+
+    .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .descripcion_soluciones ul li {
+        font-size: 20px;
+    }
+
+    .descripcion_y_titulo_conocenos .titulo_acerca h3 {
+        font-size: 5vw;
+    }
+
+    .descripcion_acerca p {
+        font-size: 1vw;
+        color: white;
+    }
+
+    .descripcion_acerca ul li {
+        font-size: 1vw;
+        color: white;
+
+    }
+    
+    .footer .instagram p{
+        padding-top: 20%;
+    }
+    
+    .footer .facebook p{
+        padding-top: 20%;
+    }
+    .footer .whats p{
+        padding-top: 20%;
+    }
+    .footer .facebook img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer .instagram img{
+        width: 30px;
+        height: 30px;
+
+    }
+    .footer .whats img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer .telefonos_direccion h2 {
+        font-size: 3vw;
+
+    }
+
+    .footer .telefonos_direccion p {
+        font-size: 2.5vw;
+
+    }
+
+    .footer .contacto h2 {
+        font-size: 3vw;
+    }
+
+    .footer .contacto div p {
+        font-size: 2vw;
+    }
+
+
+
+}
+
+/* adaptamos el header para que no rompa en la pagina al achicar la pantalla */
+@media screen and (max-width:650px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .main .mas_servicios1 {
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    .main .mas_servicios2 {
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    .main .grid-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .main .grid-galeria .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .iconos_servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slider-frame {
+        width: 350px;
+    }
+
+    /* seccion servicios */
+    .pag_servicios .servicios_en_pagina {
+        flex-direction: column;
+    }
+
+    .partners .partner_containers {
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .whatsapp_icon {
+        display: none;
+    }
+
+    .iconos_servicios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:450px) {
+   
+
+    .slider-frame {
+        width: 300px;
+    }
+
+    
+}
+
+.input {
+    outline: none;
+}
+
+.input:focus {
+    border: 2px solid royalblue;
+    border-radius: 5px;
+}

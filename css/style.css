@@ -43,13 +43,6 @@ header h1 {
 
 /* ------------------------NAV ------------------------*/
 
-header nav ul {
-    list-style: none;
-    background-color: rgba(0, 0, 0, 0.075);
-    /* margin-right: 10px; */
-    display: flex;
-}
-
 header nav ul li {
     margin-right: 10px;
 }
@@ -60,7 +53,6 @@ header nav ul li a {
     font-size: 20px;
     font-family: 'Russo One', sans-serif;
     text-align: center;
-
 }
 
 header nav ul li a:hover {
@@ -91,7 +83,6 @@ header nav ul li a:hover {
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)), url("../img/My\ Post.png");
     background-position: center;
-    /* background-image: url(../img/My\ Post.png); */
     width: 100%;
     height: calc(100vh - 165px);
     background-repeat: no-repeat;
@@ -99,9 +90,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-attachment: fixed; */
 
-    /* background-attachment: fixed; */
 }
 
 .hero div {
@@ -117,7 +106,6 @@ header nav ul li a:hover {
 }
 
 .hero div p {
-    /* text-align: center; */
     font-size: 30px;
     font-family: 'Russo One', sans-serif;
     color: salmon;
@@ -133,8 +121,6 @@ header nav ul li a:hover {
     padding: 25px;
     transition: ease 0.3s;
     z-index: 999;
-    /* right: 3%;
-    bottom: 15%; */
     padding: 15px;
     animation: efecto 1.2s infinite;
 
@@ -161,52 +147,87 @@ header nav ul li a:hover {
     }
 }
 
+.servicios div {
+    width: 100%;
+    height: auto;
+}
+
+.servicios {
+    margin-bottom: 30px;
+}
 .servicios .servicios-contenedor {
     display: flex;
-    /* justify-content:space-around;
- align-items: center; */
+    /* width: 100%;
+    height: auto; */
 
-
-    /* justify-content:center; */
 }
 
 .servicios .servicios-contenedor div {
     text-align: center;
-    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
 }
 
 .servicios .servicios-contenedor div h3 {
     color: white;
     background-color: black;
+    font-size: 25px;
+}
+
+.servicios .servicios-contenedor p {
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.servicios .servicios-contenedor div a {
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+}
+
+.mas_servicios1 .serv1 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+}
+
+.mas_servicios2 .serv2 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
 }
 
 
 /* tamaño de los div que contienen las imagenes */
-
-.servicios div {
-    width: 100%;
-    height: 350px;
+.servicios {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
+
+
 .servicios h2 {
+    text-align: center;
     font-family: 'Play', sans-serif;
 }
 
 /* tamaño de las imagenes dentro de los div */
 
-.servicios div img {
+.servicios .servicios-contenedor img {
     width: 100%;
     height: 300px;
 }
 
-.servicios {
-    margin-bottom: 50px;
-}
+
 
 .mas_servicios1 {
+
     display: flex;
     justify-content: right;
     align-items: center;
+    margin-right: 3%;
+
 
 
 }
@@ -220,14 +241,17 @@ header nav ul li a:hover {
 
 .mas_servicios1 .serv1 h3 {
     font-size: 25px;
+    font-weight: bold;
     font-family: 'Play', sans-serif;
     text-align: center;
+    margin-left: 1%;
 }
 
 .mas_servicios1 .serv1 p {
-    font-size: 10px;
-    text-align: center;
+    font-size: 20px;
+    text-align: justify;
     font-family: 'Play', sans-serif;
+    margin-left: 7%;
 }
 
 .mas_servicios2 {
@@ -235,6 +259,7 @@ header nav ul li a:hover {
     justify-content: left;
     align-items: center;
     flex-direction: row-reverse;
+    margin-left: 3%;
 
 }
 
@@ -247,11 +272,12 @@ header nav ul li a:hover {
 
 .mas_servicios2 .serv2 h3 {
     font-size: 25px;
+    font-weight: bold;
     font-family: 'Play', sans-serif;
 }
 
 .mas_servicios2 .serv2 p {
-    font-size: 10px;
+    font-size: 20px;
     text-align: justify;
     font-family: 'Play', sans-serif;
 }
@@ -261,26 +287,23 @@ header nav ul li a:hover {
     width: 100%;
     margin-top: 50px;
     display: grid;
-    /*short para hacer 3 columns */
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr)) ; */
-    /* cada bloque de las filas que puedan generarse tendran el mismo valor tamaño */
     grid-auto-rows: 420px;
     gap: 15px;
 }
 
-.grid-galeria div img {
-    /* el 100% del contenedor es decir el grid item */
+.grid-galeria .grid-item img {
+
     width: 100%;
     height: 100%;
-    /* ayuda a dimennsionar la imagen adentro del contenedor div en este caso */
     object-fit: contain;
 }
+
 .grid-item {
     position: relative;
 }
 
-/* hacer absoluto el titulo asi se monta dentro de la imagen */
+
 .grid-item h3 {
     position: absolute;
     bottom: 0;
@@ -292,6 +315,11 @@ header nav ul li a:hover {
 
 
 /* ------------------------FOOTER ------------------------ */
+.footer hr {
+    padding: 0px;
+    margin: 0px;
+}
+
 .footer {
 
     grid-area: footer;
@@ -301,7 +329,7 @@ header nav ul li a:hover {
 .footer {
     background-color: black;
     width: 100%;
-    /* height: 350px; */
+
 }
 
 .footer {
@@ -338,10 +366,6 @@ header nav ul li a:hover {
 
 }
 
-.instagram {
-    padding-top: 10px;
-}
-
 .whats {
     padding-top: 10px;
 }
@@ -352,6 +376,11 @@ header nav ul li a:hover {
 
 .footer .telefonos_direccion {
     padding-left: 20px;
+}
+.footer .contacto h2 {
+    
+        font-size: 2vw;
+    
 }
 
 .footer .contacto p {
@@ -375,8 +404,6 @@ header nav ul li a:hover {
     padding-top: 15px;
 }
 
-
-
 .whats {
     display: flex;
     justify-content: center;
@@ -398,10 +425,6 @@ header nav ul li a:hover {
 /* --------------------PAGINA SERVICIOS------------------- */
 
 .pag_servicios {
-    /* width: 100%; */
-    /* padding-top: 10px; */
-    /* background-color: beige; */
-    /* border: 5px solid green; */
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
@@ -409,18 +432,18 @@ header nav ul li a:hover {
     flex-direction: column;
 }
 
-.pag_servicios img {
+.pag_servicios .servicios_en_pagina .imagen_servicio img {
     width: 300px;
     height: 200px;
     margin: 2px;
 }
 
 .servicios_en_pagina {
-    /* border: 3px solid red; */
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
+
 }
 
 .descripcion_y_titulo_servicio {
@@ -435,8 +458,7 @@ header nav ul li a:hover {
 
 .partners .partner_containers {
     display: flex;
-    /* background-color:#8f969c;  */
-    /* border: 5px solid green; */
+
     padding: 10px;
     justify-content: space-around;
     align-items: center;
@@ -460,52 +482,65 @@ header nav ul li a:hover {
     align-items: center;
     font-family: 'Play', sans-serif;
     width: 33%;
-    
+
 
 }
 
-.copyright {
-    background-color: black;
-    text-align: center;
-}
-
-.copyright p {
-    font-family: 'Play', sans-serif;
-    font-weight: bold;
-    color: wheat;
-}
 
 /* --------------PAGINA DE CONTACTO------------ */
 
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)), url("../img/My\ Post.png");
-    background-position: center;
-    /* background-image: url(../img/My\ Post.png); */
-    width: 100%;
-    height: calc(100vh - 165px);
-    background-repeat: no-repeat;
+.hero-contacto {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)),url(../img/taller_fondo.jpg) no-repeat center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-attachment: fixed; */
+}
 
-    /* background-attachment: fixed; */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container h1{
+    font: 72px;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding-top: 300px;
+    
+}
+
+.container h1 span {
+    border: 10px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.titulo_contacto {
+    padding-left: 5%;
+    align-items: center;
+    width: 90%;
 }
 
 .titulo_contacto h1 {
     color: red;
     margin-top: 50px;
-    font-family: 'Play', sans-serif;
-    font-size: 2vh;
+    font-family: 'Russo One', sans-serif;
+    font-size: 3vh;
     text-align: center;
 }
 
 .titulo_contacto p {
     font-family: 'Play', sans-serif;
-    font-size: 1.5vh;
+    font-size: 2.5vh;
     text-align: center;
-
 }
 
 
@@ -540,10 +575,8 @@ header nav ul li a:hover {
 
 /* -------------PAGINA TRABAJA CON NOSOTROS ----- */
 
-.soluciones {
+.main_trabaja .soluciones {
     display: flex;
-    /* background-color:#8f969c; 
-    border: 5px solid green; */
     padding: 10px;
     justify-content: center;
     align-content: center;
@@ -552,8 +585,6 @@ header nav ul li a:hover {
 
 .descripcion_y_titulo_conocenos {
     display: flex;
-    /* border: 5px solid green;
-    background-color:#8f329c;  */
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
@@ -578,8 +609,8 @@ header nav ul li a:hover {
 .descripcion_soluciones p {
     font-family: 'Play', sans-serif;
     text-align: center;
-    color: rgb(225, 20, 20);
-    font-size: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
 }
 
 .descripcion_soluciones ul {
@@ -598,10 +629,8 @@ header nav ul li a:hover {
 .slider-frame {
     width: 600px;
     height: auto;
-    margin: 50px auto 0;
+    margin: 30px auto 0;
     overflow: hidden;
-
-
 }
 
 .slider-frame ul {
@@ -663,9 +692,15 @@ header nav ul li a:hover {
 
 /* ----------------ACERCA DE---------------- */
 
+.acerca_de {
+    background-color: black;
+}
+
 .descripcion_y_titulo_conocenos {
     display: flex;
     align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
 
 }
 
@@ -681,17 +716,15 @@ header nav ul li a:hover {
     color: white;
     font-size: 30px;
     font-family: 'Play', sans-serif;
-    /* text-align: center; */
+  
     text-align: justify;
 }
 
-.acerca_de {
-    background-color: black;
-}
+
 
 .descripcion_acerca ul li {
+    /* align-items: center; */
     font-family: 'Play', sans-serif;
-
     color: white;
     font-size: 30px;
 }
@@ -711,7 +744,7 @@ header nav ul li a:hover {
 .servicio_contacto {
     color: #fff;
     width: 60%;
-    
+
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -726,7 +759,11 @@ header nav ul li a:hover {
 }
 
 /*!MEDIA QUERIE SIEMPRE AL FINAL */
+
 @media screen and (max-width:1200px) {
+
+
+
     .footer {
         flex-direction: column;
     }
@@ -761,6 +798,10 @@ header nav ul li a:hover {
 }
 
 @media screen and (max-width:900px) {
+    .header h1 {
+        font-size: 5vw;
+    }
+
     .hero div h2 {
         font-size: 25px;
     }
@@ -770,6 +811,36 @@ header nav ul li a:hover {
     }
 
 
+    .hero-contacto {
+        height: 300px;
+    }
+
+    .hero-contacto .container {
+        font-size: 20px;
+        padding-top: 0px;
+    }
+
+    .hero-contacto .container h1 {
+        font: 35px;
+        padding-top: 100px;
+    }
+
+    .hero-contacto .container h1 span {
+        border: 10px solid white;
+        padding: 6px 14px;
+        display: inline-block;
+    }
+
+    .servicios div {
+        margin-left: 7%;
+        align-items: center;
+        width: 80%;
+        height: auto;
+    }
+
+    .servicios-contenedor {
+        flex-direction: column;
+    }
 
     .grid-galeria {
         grid-template-columns: repeat(2, 1fr);
@@ -784,11 +855,6 @@ header nav ul li a:hover {
     .servicios-contenedor h3 {
         font-size: 15px;
     }
-
-
-    /* .img-9 {
-        grid-column: span 2;
-    } */
 
     .footer .ubicacion iframe {
         height: 300px;
@@ -809,6 +875,7 @@ header nav ul li a:hover {
 
     }
 
+
     .descripcion_soluciones p {
         font-size: 25px;
     }
@@ -817,11 +884,67 @@ header nav ul li a:hover {
         font-size: 20px;
     }
 
+    .descripcion_y_titulo_conocenos .titulo_acerca h3 {
+        font-size: 5vw;
+    }
+
+    .descripcion_acerca p {
+        font-size: 2vw;
+    }
+
+    .descripcion_acerca ul li {
+        font-size: 2vw;
+    }
+    
+    .footer .instagram p{
+        padding-top: 20%;
+    }
+    
+    .footer .facebook p{
+        padding-top: 20%;
+    }
+    .footer .whats p{
+        padding-top: 20%;
+    }
+    .footer .facebook img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer .instagram img{
+        width: 30px;
+        height: 30px;
+
+    }
+    .footer .whats img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer .telefonos_direccion h2 {
+        font-size: 3vw;
+
+    }
+
+    .footer .telefonos_direccion p {
+        font-size: 2.5vw;
+
+    }
+
+    .footer .contacto h2 {
+        font-size: 3vw;
+    }
+
+    .footer .contacto div p {
+        font-size: 2vw;
+    }
+
+
+
 }
 
 /* adaptamos el header para que no rompa en la pagina al achicar la pantalla */
 @media screen and (max-width:650px) {
-
 
     header {
         flex-direction: column;
@@ -844,9 +967,7 @@ header nav ul li a:hover {
         flex-direction: column;
     }
 
-    .servicios-contenedor a {
-        display: none;
-    }
+
 
     .iconos_servicios {
         grid-template-columns: repeat(2, 1fr);
@@ -895,4 +1016,13 @@ header nav ul li a:hover {
         grid-column: span 1;
         grid-row: span 1;
     }
+}
+
+.input {
+    outline: none;
+}
+
+.input:focus {
+    border: 2px solid royalblue;
+    border-radius: 5px;
 }

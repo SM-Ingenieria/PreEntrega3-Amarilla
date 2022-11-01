@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,800;1,900&family=Play:wght@400;700&family=Russo+One&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 400px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+
+    grid-area: footer;
+}
+
+.btn {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.btn:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.whatsapp_icon {
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    z-index: 999;
+    padding: 15px;
+    animation: efecto 1.2s infinite;
+
+}
+
+.boton {
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0 , 0);
+    }
+}

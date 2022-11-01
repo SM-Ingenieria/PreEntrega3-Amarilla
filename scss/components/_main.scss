@@ -1,0 +1,107 @@
+.main {
+    grid-area: main;
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)), url("../img/My\ Post.png");
+        background-position: center;
+        width: 100%;
+        height: calc(100vh - 165px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 190px;
+            h2 {
+                font-size: 40px;
+                font-family: 'Russo One', sans-serif;
+            }
+            p {
+                font-size: 30px;
+                font-family: 'Russo One', sans-serif;
+                color: salmon;
+            }
+        }
+    
+    }
+
+    .whatsapp_icon {
+        background-color: #2e6329;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        padding: 25px;
+        transition: ease 0.3s;
+        z-index: 999;
+        padding: 15px;
+        animation: efecto 1.2s infinite;
+        &:hover{
+            transform: scale(1, 1);
+            transition: 0.3s;
+        }
+    }
+   
+
+    .mas_servicios1 {
+        padding-top: 30px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-right: 3%;
+        .serv1 {
+            text-align: center;
+            margin-right: 30px;
+            h3 {
+                font-size: 25px;
+                font-weight: bold;
+                font-family: 'Play', sans-serif;
+                text-align: center;
+                margin-left: 1%;
+            }
+            p {
+                font-size: 20px;
+                text-align: justify;
+                font-family: 'Play', sans-serif;
+                margin-left: 7%;
+            }
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: red;
+            }    
+        }
+    }
+    .mas_servicios2 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-left: 3%;
+        .serv2 {
+            text-align: center;
+            padding: 30px;
+            h3 {
+                font-size: 25px;
+                font-weight: bold;
+                font-family: 'Play', sans-serif;
+            }
+            p {
+                font-size: 20px;
+                text-align: justify;
+                font-family: 'Play', sans-serif;
+            }
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: red;
+            }
+        }
+    
+    }
+    
+}

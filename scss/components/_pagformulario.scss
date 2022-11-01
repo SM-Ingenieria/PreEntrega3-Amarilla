@@ -1,0 +1,30 @@
+.hero-contacto {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)),url(../img/taller_fondo.jpg) no-repeat center;
+    background-size: cover;
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        h1{
+            font: 72px;
+            letter-spacing: 0.2em;
+            margin: 0;
+            padding-top: 300px;
+            span {
+                border: 10px solid white;
+                padding: 6px 14px;
+                display: inline-block;
+            }
+            
+        }
+    }
+}

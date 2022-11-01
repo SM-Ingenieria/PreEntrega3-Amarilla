@@ -1,0 +1,76 @@
+// pagina de contacto
+
+.hero-contacto {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)),url(../img/taller_fondo.jpg) no-repeat center;
+    background-size: cover;
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        h1{
+            font: 72px;
+            letter-spacing: 0.2em;
+            margin: 0;
+            padding-top: 300px;
+            span {
+                border: 10px solid white;
+                padding: 6px 14px;
+                display: inline-block;
+            }
+            
+        }
+    }
+}
+
+.titulo_contacto {
+    padding-left: 5%;
+    align-items: center;
+    width: 90%;
+    h1 {
+        color: red;
+        margin-top: 50px;
+        font-family: 'Russo One', sans-serif;
+        font-size: 3vh;
+        text-align: center;
+    }
+    p {
+        font-family: 'Play', sans-serif;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+}
+
+.iconos_servicios {
+    padding-left: 10%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+    align-content: center;
+    justify-content: center;
+    .servicio_contacto {
+        color: #fff;
+        width: 60%;
+    
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h4 {
+            font-family: 'Russo One', sans-serif;
+            color: black;
+            text-align: center;
+        }
+    }
+}
+

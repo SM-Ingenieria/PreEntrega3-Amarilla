@@ -1,0 +1,96 @@
+.main_trabaja {
+    background-color: black;
+    .soluciones {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+        
+        font-family: 'Play', sans-serif;
+        text-align: center;
+        .soluciones_box{
+            .slider-frame {
+                width: 50%;
+                height: auto;
+                margin: 30px auto 0;
+                overflow: hidden;
+                ul {
+                    display: flex;
+                    padding: 0;
+                    width: 400%;
+                    animation: slide 16s infinite alternate ease-in-out;
+                    
+                    // donde meto los keyframes? 
+                    @keyframes slide {
+                        0% {
+                            margin-left: 0%;
+                        }
+                    
+                        20% {
+                            margin-left: 0%;
+                        }
+                    
+                        25% {
+                            margin-left: -100%;
+                        }
+                    
+                        45% {
+                            margin-left: -100%;
+                        }
+                    
+                        50% {
+                            margin-left: -200%;
+                        }
+                    
+                        70% {
+                            margin-left: -200%;
+                        }
+                    
+                        75% {
+                            margin-left: -300%;
+                        }
+                    
+                        95% {
+                            margin-left: -300%;
+                        }
+                    
+                    }
+                    li {
+                        list-style: none;
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }         
+                }
+            }
+            .descripcion_y_titulo_conocenos {
+                .titulo_soluciones h3{
+                    font-family: 'Play', sans-serif;
+                    text-align: center;
+                    color: rgb(225, 20, 20);
+                    font-size: 50px;
+                }
+                .descripcion_soluciones{
+                    p {
+                        font-family: 'Play', sans-serif;
+                        text-align: center;
+                        color: rgb(255, 255, 255);
+                        font-size: 30px;
+                    }
+                    ul{
+                        list-style: none; 
+                        li {
+                            font-family: 'Play', sans-serif;
+                            text-align: center;
+                            color: white;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+    }
+}

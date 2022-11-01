@@ -1,0 +1,729 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,800;1,900&family=Play:wght@400;700&family=Russo+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 400px;
+  grid-template-areas: "header header" "main main" "footer footer"; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+.btn {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: aliceblue; }
+
+.btn:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white; }
+
+.whatsapp_icon {
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+  z-index: 999;
+  padding: 15px;
+  animation: efecto 1.2s infinite; }
+
+.boton {
+  width: 50px;
+  transition: ease 1s; }
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85); }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0); } }
+
+.main .servicios {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 30px; }
+  .main .servicios h2 {
+    text-align: center;
+    font-family: 'Play', sans-serif; }
+  .main .servicios .servicios-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex; }
+    .main .servicios .servicios-contenedor div {
+      text-align: center;
+      display: flex;
+      flex-direction: column; }
+      .main .servicios .servicios-contenedor div h3 {
+        color: white;
+        background-color: black;
+        font-size: 25px; }
+      .main .servicios .servicios-contenedor div p {
+        font-size: 20px;
+        font-family: 'Play', sans-serif;
+        text-align: center; }
+      .main .servicios .servicios-contenedor div a {
+        font-size: 20px;
+        text-decoration: none;
+        color: red; }
+      .main .servicios .servicios-contenedor div img {
+        width: 100%;
+        height: 300px; }
+
+.main .mas_servicios1 {
+  padding-top: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 3%; }
+  .main .mas_servicios1 .serv1 {
+    text-align: center;
+    margin-right: 30px; }
+    .main .mas_servicios1 .serv1 h3 {
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Play', sans-serif;
+      text-align: center;
+      margin-left: 1%; }
+    .main .mas_servicios1 .serv1 p {
+      font-size: 20px;
+      text-align: justify;
+      font-family: 'Play', sans-serif;
+      margin-left: 7%; }
+    .main .mas_servicios1 .serv1 a {
+      font-size: 20px;
+      text-decoration: none;
+      color: red; }
+
+.main .mas_servicios2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-left: 3%; }
+  .main .mas_servicios2 .serv2 {
+    text-align: center;
+    padding: 30px; }
+    .main .mas_servicios2 .serv2 h3 {
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Play', sans-serif; }
+    .main .mas_servicios2 .serv2 p {
+      font-size: 20px;
+      text-align: justify;
+      font-family: 'Play', sans-serif; }
+    .main .mas_servicios2 .serv2 a {
+      font-size: 20px;
+      text-decoration: none;
+      color: red; }
+
+.main .grid-galeria {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 420px;
+  gap: 15px; }
+  .main .grid-galeria .grid-item {
+    position: relative; }
+    .main .grid-galeria .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+    .main .grid-galeria .grid-item h3 {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background-color: black;
+      width: 100%;
+      font-size: 30px; }
+
+header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  z-index: 1;
+  grid-area: header; }
+  header h1 {
+    margin-left: 20px;
+    color: white;
+    position: sticky;
+    font-family: 'Russo One', sans-serif; }
+  header nav ul li {
+    margin-right: 10px; }
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family: 'Russo One', sans-serif;
+      text-align: center; }
+      header nav ul li a:hover {
+        opacity: 0.8; }
+
+.main {
+  grid-area: main; }
+  .main .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)), url("../img/My Post.png");
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 165px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main .hero div {
+      text-align: center;
+      color: white;
+      position: relative;
+      top: 190px; }
+      .main .hero div h2 {
+        font-size: 40px;
+        font-family: 'Russo One', sans-serif; }
+      .main .hero div p {
+        font-size: 30px;
+        font-family: 'Russo One', sans-serif;
+        color: salmon; }
+  .main .whatsapp_icon {
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    z-index: 999;
+    padding: 15px;
+    animation: efecto 1.2s infinite; }
+    .main .whatsapp_icon:hover {
+      transform: scale(1, 1);
+      transition: 0.3s; }
+  .main .mas_servicios1 {
+    padding-top: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 3%; }
+    .main .mas_servicios1 .serv1 {
+      text-align: center;
+      margin-right: 30px; }
+      .main .mas_servicios1 .serv1 h3 {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Play', sans-serif;
+        text-align: center;
+        margin-left: 1%; }
+      .main .mas_servicios1 .serv1 p {
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Play', sans-serif;
+        margin-left: 7%; }
+      .main .mas_servicios1 .serv1 a {
+        font-size: 20px;
+        text-decoration: none;
+        color: red; }
+  .main .mas_servicios2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: 3%; }
+    .main .mas_servicios2 .serv2 {
+      text-align: center;
+      padding: 30px; }
+      .main .mas_servicios2 .serv2 h3 {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Play', sans-serif; }
+      .main .mas_servicios2 .serv2 p {
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Play', sans-serif; }
+      .main .mas_servicios2 .serv2 a {
+        font-size: 20px;
+        text-decoration: none;
+        color: red; }
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto; }
+  .footer h2 {
+    font-family: 'Play', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; }
+  .footer .telefonos_direccion {
+    padding-left: 20px;
+    font-family: 'Play', sans-serif;
+    color: white; }
+    .footer .telefonos_direccion p {
+      margin-top: 10px; }
+  .footer .contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    .footer .contacto h2 {
+      font-size: 2vw; }
+    .footer .contacto .instagram {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px; }
+      .footer .contacto .instagram p {
+        padding-top: 10px;
+        color: #fff;
+        font-family: 'Play', sans-serif; }
+      .footer .contacto .instagram img {
+        width: 30px;
+        height: 30px; }
+    .footer .contacto .facebook {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px; }
+      .footer .contacto .facebook p {
+        padding-top: 10px;
+        color: #fff;
+        font-family: 'Play', sans-serif; }
+      .footer .contacto .facebook img {
+        width: 30px;
+        height: 30px; }
+    .footer .contacto .whats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      .footer .contacto .whats p {
+        padding-top: 10px;
+        color: #fff;
+        font-family: 'Play', sans-serif; }
+      .footer .contacto .whats img {
+        width: 30px;
+        height: 30px; }
+  .footer .logo {
+    display: flex;
+    justify-content: center; }
+    .footer .logo img {
+      width: 100px; }
+
+.acerca_de {
+  background-color: black; }
+  .acerca_de .slider-frame {
+    width: 50%;
+    height: auto;
+    margin: 30px auto 0;
+    overflow: hidden; }
+    .acerca_de .slider-frame ul {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: slide 16s infinite alternate ease-in-out; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0%; }
+  20% {
+    margin-left: 0%; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  95% {
+    margin-left: -300%; } }
+      .acerca_de .slider-frame ul li {
+        list-style: none;
+        width: 100%; }
+        .acerca_de .slider-frame ul li img {
+          width: 100%; }
+  .acerca_de .descripcion_y_titulo_conocenos {
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center; }
+    .acerca_de .descripcion_y_titulo_conocenos .titulo_acerca h3 {
+      color: red;
+      font-size: 2rem;
+      text-align: center;
+      font-family: 'Play', sans-serif; }
+    .acerca_de .descripcion_y_titulo_conocenos .descripcion_acerca p {
+      color: white;
+      font-size: 30px;
+      font-family: 'Play', sans-serif;
+      text-align: justify; }
+    .acerca_de .descripcion_y_titulo_conocenos .descripcion_acerca ul li {
+      font-family: 'Play', sans-serif;
+      color: white;
+      font-size: 30px; }
+
+.hero-contacto {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)), url(../img/taller_fondo.jpg) no-repeat center;
+  background-size: cover; }
+  .hero-contacto .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .hero-contacto .container h1 {
+      font: 72px;
+      letter-spacing: 0.2em;
+      margin: 0;
+      padding-top: 300px; }
+      .hero-contacto .container h1 span {
+        border: 10px solid white;
+        padding: 6px 14px;
+        display: inline-block; }
+
+.pag_servicios {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex: 200px;
+  flex-direction: column; }
+  .pag_servicios .servicios_en_pagina {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .pag_servicios .servicios_en_pagina .descripcion_y_titulo_servicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: flex-start;
+      font-family: 'Play', sans-serif; }
+    .pag_servicios .servicios_en_pagina .imagen_servicio img {
+      width: 300px;
+      height: 200px;
+      margin: 2px; }
+
+.partners .partner_containers {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center; }
+  .partners .partner_containers .partner_box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Play', sans-serif;
+    width: 33%; }
+    .partners .partner_containers .partner_box img {
+      width: 200px;
+      height: 200px; }
+
+.hero-contacto {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.412)), url(../img/taller_fondo.jpg) no-repeat center;
+  background-size: cover; }
+  .hero-contacto .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .hero-contacto .container h1 {
+      font: 72px;
+      letter-spacing: 0.2em;
+      margin: 0;
+      padding-top: 300px; }
+      .hero-contacto .container h1 span {
+        border: 10px solid white;
+        padding: 6px 14px;
+        display: inline-block; }
+
+.titulo_contacto {
+  padding-left: 5%;
+  align-items: center;
+  width: 90%; }
+  .titulo_contacto h1 {
+    color: red;
+    margin-top: 50px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 3vh;
+    text-align: center; }
+  .titulo_contacto p {
+    font-family: 'Play', sans-serif;
+    font-size: 2.5vh;
+    text-align: center; }
+
+.iconos_servicios {
+  padding-left: 10%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 220px;
+  align-content: center;
+  justify-content: center; }
+  .iconos_servicios .servicio_contacto {
+    color: #fff;
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .iconos_servicios .servicio_contacto h4 {
+      font-family: 'Russo One', sans-serif;
+      color: black;
+      text-align: center; }
+
+.main_trabaja {
+  background-color: black; }
+  .main_trabaja .soluciones {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Play', sans-serif;
+    text-align: center; }
+    .main_trabaja .soluciones .soluciones_box .slider-frame {
+      width: 50%;
+      height: auto;
+      margin: 30px auto 0;
+      overflow: hidden; }
+      .main_trabaja .soluciones .soluciones_box .slider-frame ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 16s infinite alternate ease-in-out; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0%; }
+  20% {
+    margin-left: 0%; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  95% {
+    margin-left: -300%; } }
+        .main_trabaja .soluciones .soluciones_box .slider-frame ul li {
+          list-style: none;
+          width: 100%; }
+          .main_trabaja .soluciones .soluciones_box .slider-frame ul li img {
+            width: 100%; }
+    .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .titulo_soluciones h3 {
+      font-family: 'Play', sans-serif;
+      text-align: center;
+      color: #e11414;
+      font-size: 50px; }
+    .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .descripcion_soluciones p {
+      font-family: 'Play', sans-serif;
+      text-align: center;
+      color: white;
+      font-size: 30px; }
+    .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .descripcion_soluciones ul {
+      list-style: none; }
+      .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .descripcion_soluciones ul li {
+        font-family: 'Play', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 30px; }
+
+/*!MEDIA QUERIE SIEMPRE AL FINAL */
+@media screen and (max-width: 1200px) {
+  .slider-frame {
+    width: 20%; }
+  .footer {
+    flex-direction: column; }
+  .servicios-contenedor h3 {
+    font-size: 20px; }
+  .servicios-contenedor a {
+    font-size: 10px; }
+  .grid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto 400px;
+    grid-template-areas: "header header" "main main" "footer footer"; }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 900px) {
+  .header h1 {
+    font-size: 5vw; }
+  .hero div h2 {
+    font-size: 25px; }
+  .hero div p {
+    font-size: 20px; }
+  .hero-contacto {
+    height: 300px; }
+  .hero-contacto .container {
+    font-size: 20px;
+    padding-top: 0px; }
+  .hero-contacto .container h1 {
+    font: 35px;
+    padding-top: 100px; }
+  .hero-contacto .container h1 span {
+    border: 10px solid white;
+    padding: 6px 14px;
+    display: inline-block; }
+  .servicios div {
+    margin-left: 7%;
+    align-items: center;
+    width: 80%;
+    height: auto; }
+  .servicios-contenedor {
+    flex-direction: column; }
+  .main .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px; }
+  .main .grid-galeria .grid-item {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .servicios-contenedor h3 {
+    font-size: 15px; }
+  .footer .ubicacion iframe {
+    height: 300px;
+    width: 300px; }
+  .soluciones .soluciones_box .slider-frame {
+    width: 300px; }
+  .bienivenidos_citas {
+    height: 695px;
+    padding-bottom: 100px; }
+  .contacto_descripcion p {
+    font-size: 30px; }
+  .main .soluciones .soluciones_box .descripcion_y_titulo_conocenos .titulo_soluciones h3 {
+    font-size: 50%; }
+  .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .descripcion_soluciones p {
+    font-size: 25px; }
+  .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .descripcion_soluciones ul li {
+    font-size: 20px; }
+  .descripcion_y_titulo_conocenos .titulo_acerca h3 {
+    font-size: 5vw; }
+  .descripcion_acerca p {
+    font-size: 1vw;
+    color: white; }
+  .descripcion_acerca ul li {
+    font-size: 1vw;
+    color: white; }
+  .footer .instagram p {
+    padding-top: 20%; }
+  .footer .facebook p {
+    padding-top: 20%; }
+  .footer .whats p {
+    padding-top: 20%; }
+  .footer .facebook img {
+    width: 30px;
+    height: 30px; }
+  .footer .instagram img {
+    width: 30px;
+    height: 30px; }
+  .footer .whats img {
+    width: 30px;
+    height: 30px; }
+  .footer .telefonos_direccion h2 {
+    font-size: 3vw; }
+  .footer .telefonos_direccion p {
+    font-size: 2.5vw; }
+  .footer .contacto h2 {
+    font-size: 3vw; }
+  .footer .contacto div p {
+    font-size: 2vw; } }
+
+/* adaptamos el header para que no rompa en la pagina al achicar la pantalla */
+@media screen and (max-width: 650px) {
+  header {
+    flex-direction: column;
+    justify-content: center; }
+  header nav ul li a {
+    font-size: 15px;
+    text-align: center; }
+  .main .mas_servicios1 {
+    padding-top: 30px;
+    flex-direction: column; }
+  .main .mas_servicios2 {
+    padding-top: 30px;
+    flex-direction: column; }
+  .main .grid-galeria {
+    grid-template-columns: 1fr; }
+  .main .grid-galeria .grid-item {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .iconos_servicios {
+    grid-template-columns: repeat(2, 1fr); }
+  .slider-frame {
+    width: 350px; }
+  /* seccion servicios */
+  .pag_servicios .servicios_en_pagina {
+    flex-direction: column; }
+  .partners .partner_containers {
+    flex-direction: column; }
+  .footer {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  .whatsapp_icon {
+    display: none; }
+  .iconos_servicios {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media screen and (max-width: 450px) {
+  .slider-frame {
+    width: 300px; } }
+
+.input {
+  outline: none; }
+
+.input:focus {
+  border: 2px solid royalblue;
+  border-radius: 5px; }
