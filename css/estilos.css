@@ -423,13 +423,16 @@ header {
   .pag_servicios .servicios_en_pagina {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%; }
     .pag_servicios .servicios_en_pagina .descripcion_y_titulo_servicio {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-content: flex-start;
-      font-family: 'Play', sans-serif; }
+      font-family: 'Play', sans-serif;
+      margin-right: 2%; }
     .pag_servicios .servicios_en_pagina .imagen_servicio img {
       width: 300px;
       height: 200px;
@@ -437,7 +440,6 @@ header {
 
 .partners .partner_containers {
   display: flex;
-  padding: 10px;
   justify-content: space-around;
   align-items: center; }
   .partners .partner_containers .partner_box {
@@ -447,7 +449,7 @@ header {
     justify-content: center;
     align-items: center;
     font-family: 'Play', sans-serif;
-    width: 33%; }
+    width: 32%; }
     .partners .partner_containers .partner_box img {
       width: 200px;
       height: 200px; }
