@@ -74,10 +74,14 @@
     }
 
     .servicios div {
-        // margin-left: 7%;
         align-items: center;
         width: 80%;
         height: auto;
+    }
+
+    .main .servicios .servicios-contenedor div {
+        width: 70%;
+        height: 50%;
     }
 
     .servicios-contenedor {
@@ -118,7 +122,7 @@
     }
 
     .main .soluciones .soluciones_box .descripcion_y_titulo_conocenos .titulo_soluciones h3{
-        font-size: 50%;
+        font-size: 10%;
     }
 
     .main_trabaja .soluciones .soluciones_box .descripcion_y_titulo_conocenos .descripcion_soluciones p {
